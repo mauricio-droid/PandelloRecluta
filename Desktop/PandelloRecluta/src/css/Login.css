@@ -1,0 +1,46 @@
+h1 {
+    color: #CD5C5C;
+    font-family: "Franklin Gothic Medium", SANS-SERIF;
+    font-size: 70px;
+    text-align: center;
+}
+
+
+.containerPrincipal {
+    position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border: 1px solid blue;
+      padding: 40px;
+      background-color: white;
+  }
+  
+  .containerSecundario{
+    text-align: center;
+  }
+
+  button {
+    position: relative;
+    display: block;
+    height: 60px;
+    width: 200px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 17px;
+    overflow: hidden;
+    transition: all 500ms ease;
+    border: 1px solid #008CBA;
+    margin-bottom: 40px;
+    z-index: 0;
+    font-weight: 500;
+    }
+
+  body{
+    background-image: url(./panda.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
