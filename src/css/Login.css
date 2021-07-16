@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+@import url('animate.css');
+
+*{
+    box-sizing: border-box;
+   
+}
+ body{
+    background-color: .bg-warning;
+    background-size: cover;
+
+     color: #fff;
+     font-family: 'Quicksand', sans-serif;
+     
+ }
+ a{
+     color: #fff;
+     border: 0;
+     
+     padding: 1em;
+ }
+ .container{
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+ }
+
+ .logo{
+     text-align: center;
+     font-size: 3em;
+     
+ }
+.logo span {
+    color: red;
+}
+
+.lg {
+    box-shadow:0 0 100px 0 rgba(255, 255, 255, 0.3);
+    
+  
+}
+.lg > *{
+    padding: 1em;
+}
+
+.lg-info {
+    background: #212121;
+}
+.lg-info form{
+    margin: 0;
+    padding: 1em;
+}
+
+
+.lg-info form button,
+.lg-info form input,
+.lg-info form textarea{
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    border-bottom: 1px solid red;
+    color: #fff;
+}
+
+.lg-info form button{
+    background: red;
+    color: #fff;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+
+}
+.lg-info form button:hover,
+.lg-info form button:focus{
+    background: red;
+    color: silver;
+    transition: background-color 1s ease-out;
+}
+
+
+
+@media (min-width:700px) {
+    body{
+        padding: 0 4rem;
+    }
+    .lg{
+        display: grid;
+        grid-template-columns:3fr 1fr;
+    }
+    .lg > *{
+        padding: 2em;
+    }
+    .lg-img{
+        background-color: .bg-success;
+        width: 171px;
+        height: 450px;
+    }
+
+
+}

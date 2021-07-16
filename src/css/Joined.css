@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+*{
+    
+
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: .bg-info;
+    background-size: cover;
+    font-family: 'Quicksand', sans-serif;
+
+}
+.navigation{
+    padding: 0;
+    margin: 0;
+    height: 80px;
+    width: 100%;
+    background: #212121;
+
+    
+}
+
+.logov{
+    font-size: 35px;
+    
+    color: #fff;
+    padding: 0 100px;
+    line-height: 80px;
+}
+.logov span {
+    color: red;
+}
+nav ul{
+    float: right;
+    margin-right: 40px;
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+
+}
+
+ .act{
+     color: #fff;
+     font-size: 18px;
+     text-transform: uppercase;
+     border: 1px solid transparent;
+     padding: 7px 10px;
+     border-radius: 3px;
+
+
+ }
+
+ .act:hover{
+     border: 1px solid #fff;
+    transition: .5s;
+ }
+
+ .box{
+    
+    background: #fff;;
+    padding: 1em;
+    border-radius: 25px;
+
+    border: 2px solid red;
+    margin: 1em;
+}
+
+.box-info p{
+    
+    padding: 10px;
+    background: #212121;;
+    padding: 1em;
+    border-radius: 25px;
+    
+}
+
+
+.box h3{
+    color: #000;
+    text-align: center;
+
+}
+.b{
+    width: 100%;
+    padding: 1em;
+    color: #fff;
+    border-bottom: 1px solid red;
+    background: red;
+    border: 0;
+    text-transform: uppercase;
+    
+}
+.b2{
+    width: 250px;
+    padding: 1em;
+    color: #fff;
+    border-bottom: 1px solid red;
+    background: red;
+    border: 0;
+    text-transform: uppercase;
+    margin: 1em;
+    
+}
+
+.b2:hover,
+.b2:focus{
+    background: red;
+    color: silver;
+    transition: background-color 1s ease-out;
+}
+
+
+
+@media (min-width:400px) {
+    .boxf{
+        width: 100%;
+        display: grid;
+        grid-template-columns:1fr ;
+    }
+
+
+}
+@media (min-width:700px) {
+    .boxf{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+    @media (min-width:900px) {
+        .boxf{
+            display: grid;
+            grid-template-columns:1fr 1fr 1fr;
+        }
+    
+
+
+}
+@media (min-width:1424px) {
+    .boxf{
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    }
+
+
+}

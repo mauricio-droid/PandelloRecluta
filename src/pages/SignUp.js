@@ -1,11 +1,14 @@
 import "../css/Login.css";
 import React, {Component} from "react";
 
-class Login extends Component{
+class SignUp extends Component{
+
+
     state={
         form:{
             username:'',
-            password:''
+            password:'',
+            mail:''
         }
     }
     handlechange=async e=>{
@@ -23,7 +26,7 @@ class Login extends Component{
             <div className="lg animate__animated animate__backInDown">
                 <div className="lg-info">
 
-                    <h3>Iniciar sesión</h3>
+                    <h3>Registrarse</h3>
                     <form className="animate__animated animate__bounce">
                         <p>
                             <label>Usuario</label>
@@ -34,7 +37,7 @@ class Login extends Component{
                             />
                         </p>
                         <p>
-                            <label className="userl">Contraseña</label>
+                            <label>Contraseña</label>
                             <input 
                                 type="password" 
                                 name="password"
@@ -42,11 +45,18 @@ class Login extends Component{
                             />
                         </p>
                         <p>
-                            
-                        <button><a href="./Open">Ingresar</a></button>
-                       
+                            <label>Correo Electrónico</label>
+                            <input 
+                                type="email" 
+                                name="mail"
+                                onChange={this.handlechange}
+                            />
                         </p>
-                        <p><a href="./Reg">¿Ya tengo cuenta?</a></p>
+                        <p>
+                        <button><a href="./Joined">Registrarme</a></button>
+                        </p>
+                        
+                        <p><a href="./">Ya tengo cuenta</a></p>
                     </form>
                 </div>
                 <div className="lg-img">
@@ -63,4 +73,4 @@ class Login extends Component{
     }
 }
 
-export default Login;
+export default Joined;
